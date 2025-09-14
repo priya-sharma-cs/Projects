@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeetX - Meeting Room</title>
+  
+  <link rel="stylesheet" href="../css/meeting.css">
+  <!-- Add this inside the <head> or before the closing </body> tag -->
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+</head>
+<body>
+  <div class="meeting-container">
+    <div class="video-grid" id="video-grid">
+      <!-- Videos dynamically added here -->
+    </div>
+
+    <div class="controls">
+      <button id="muteButton">🎤 Mute</button>
+      <button id="videoButton">🎥 Stop Video</button>
+      <button id="shareScreen">🖥️ Share Screen</button>
+      <button id="chatToggle">💬 Chat</button>
+      <button id="leaveButton" class="leave">🚪 Leave</button>
+    </div>
+
+    <div class="chat-panel" id="chat-panel">
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/meeting.js"></script>
+</body>
+</html>

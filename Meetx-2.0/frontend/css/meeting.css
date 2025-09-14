@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  
+  .meeting-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    background: black;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .controls {
+    background: #2d2d2d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    background: #3c3c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .controls button:hover {
+    background: #555;
+  }
+  
+  .leave {
+    background: #d9534f;
+  }
+  
+  .leave:hover {
+    background: #c9302c;
+  }
+  
+  .chat-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background: #2a2a2a;
+    display: none;
+    flex-direction: column;
+    border-left: 1px solid #444;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    background: #222;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .chat-input button {
+    padding: 8px 15px;
+    background: #4caf50;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  

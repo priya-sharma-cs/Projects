@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - MeetX</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Welcome, <span id="userName">User</span></h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+      <!-- User Profile Section -->
+      <section class="profile">
+        <h2>User Profile</h2>
+        <p>Email: <span id="userEmail">user@example.com</span></p>
+      </section>
+
+      <!-- Active Meetings Section -->
+      <section class="active-meetings">
+        <h2>Active Meetings</h2>
+        <ul id="activeMeetingsList">
+          <!-- Dynamically populated -->
+        </ul>
+        <button id="createMeetingBtn">Create New Meeting</button>
+      </section>
+
+      <!-- Join a Meeting Section -->
+      <section class="join-meeting">
+        <h2>Join an Existing Meeting</h2>
+        <input type="text" id="meetingIdInput" placeholder="Enter Meeting ID">
+        <button id="joinMeetingBtn">Join Meeting</button>
+      </section>
+
+      <!-- Recent Chat History Section -->
+      <section class="recent-chats">
+        <h2>Recent Chats</h2>
+        <ul id="recentChatsList">
+          <!-- Dynamically populated -->
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
